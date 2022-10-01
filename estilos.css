@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+h1 {
+    cursor: pointer;
+}
+* {
+    font-family: 'arial', serif;
+}
+nav.navbar {
+    color: rgb(249, 249, 249) ;
+}
+
+
+.desplazar {
+    float: inline-end;
+    
+}
+
+.back-honolulu {
+    background-color: #353A40;
+}
+
+
+.center {
+    text-align:center;
+    width:100%;
+} 
+
+.sombra {
+    filter: brightness(50%);
+    
+
+}
+
+.footer {
+    background-color:  #1E3B4B;
+ }
+body>header>nav>div>ul {
+color: white;
+list-style-type: none;
+ }
+
+ body>header>nav>div>ul>li>a {
+    color: gray;
+ }
+body>header>nav>div>ul>li>a:hover {
+   color: white ; 
+   transition:all .2s;
+   text-decoration: none;
+}
+
+
