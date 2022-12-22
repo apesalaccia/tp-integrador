@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="codoacodo.png" width="200"> Conf Bs As</a>
+                <a class="navbar-brand" href="index.html"> <img src="codoacodo.png" width="200"> Conf Bs As</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -25,10 +25,10 @@
                 </button>
                 <div class="collapse navbar-collapse show " id="navbarNavAltMarkup" style="justify-content:center ;">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#">La conferencia</a>
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" aria-current="page" href="/index.html">La conferencia</a>
+                        <a class="nav-link" href="#oradores">Los oradores</a>
                         <a class="nav-link" href="#">El lugar y la fecha</a>
-                        <a class="nav-link" href="#">Conviértete en orador</a>
+                        <a class="nav-link" href="#orador">Conviértete en orador</a>
                         <a class="nav-link text-success" href="tickets.html">Comprar tickets</a>
                     </div>
                 </div>
@@ -36,128 +36,127 @@
         </nav>
     </header>
     <main>
-        <div class="card bg-dark text-white container-fluid">
-            <img src="ba1.jpg" class="card-img sombra">
-            <div class="card-img-overlay" style="position:sticky !important;">
-                <div class="d-flex justify-content-end align-self-md-end">
-                    <div class="col-md-4 p-2 desplazar">
-                        <h4 class="card-title"><b>Conf Bs As</b></h4>
-                        <h5 class="card-text">Bs As llega por primera vez a Argentina. Un evento para compartir con
-                            nuestra
-                            comunidad
-                            el
-                            conocimiento y experiencia de los expertos que están creando el futuro de Internet. Van a
+        <section class="showcase">
+            <div class="shadow">
+                <div class="container-flex">
+                    <div class="content">
+                        <h1>Conf Bs As</h1>
+                        <p>Bs As llega por primera vez a Argentina. Un eveto para compratir con nuestra comunidad el
+                            conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a
                             conocer a
-                            miembros
-                            del eventos, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos
-                            para ti. Te
-                            esperamos!</h5>
-                        <p class="card-text">
-                            <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                            <button type="button" class="btn btn-success">Comprar tickets</button>
+                            miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que
+                            tenemos
+                            para ti. Te esperamos!</p>
+                        <div class="buttonarea">
+                            <a class="btn btn-transparent" href="#orador">Quiero ser orador</a>
+                            <a class="btn btn-solid" href="#tickets">Comprar tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="center">
+                <br>
+                <a><small>CONOCE A LOS</small></a>
+                <h3><b>ORADORES</b></h3>
+                <div class="card-group w-75 m-auto" id="oradores">
+                    <div class="card">
+                        <img src="/steve.png" class="card-img-top img-fluid" alt="card-group-image">
+                        <div class="card-body">
+                            <button type="button" class="btn btn-warning"><b>JavaScript</b></button>
+                            <button type="button" class="btn btn-info"><b>React</b></button>
+                            <h5 class="card-title">Steve Jobs</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, a error
+                                itaque reprehenderit impedit cumque! Hic, ex. Commodi in suscipit, laudantium
+                                reprehenderit
+                                soluta vel laboriosam repellendus maiores dolor doloribus minus.</p>
+
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="bill.jpg" class="card-img-top img-fluid" alt="card-group-image">
+                        <div class="card-body">
+                            <button type="button" class="btn btn-warning"><b>JavaScript</b></button>
+                            <button type="button" class="btn btn-info"><b>React</b></button>
+                            <h5 class="card-title">Bill Gates</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                                consectetur illo unde enim cum quia harum ullam itaque quis laboriosam velit ducimus,
+                                culpa
+                                magnam nihil magni vel architecto laudantium voluptatibus.</p>
+
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="ada.jpeg" class="card-img-top img-fluid" alt="card-group-image">
+                        <div class="card-body">
+                            <button type="button" class="btn btn-secondary"><b>Negocios</b></button>
+                            <button type="button" class="btn btn-danger"><b>Stertups</b></button>
+                            <h5 class="card-title">Ada Lovelace</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                                error
+                                quisquam doloremque dicta labore odit quos? Velit cumque excepturi ducimus assumenda,
+                                provident tempore officiis dolorem beatae fugiat totam possimus consequatur.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+        </section>
+        <div class="card mb-3" style="max-width: 2000px;">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <img src="honolulu.jpg" width="" class="card-img">
+                </div>
+                <div class="col-md-6 back-honolulu">
+                    <div class="card-body">
+                        <h5 class="card-title text-white"><b>Bs As - Octubre</b></h5>
+                        <p class="card-text text-white">Buenos Aires es la provincia y localidad más grande del
+                            estado
+                            de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales
+                            ciudades estadounidenses. Aunque el nombrede Honolulu se refiere al área urbana en la
+                            costa
+                            sureste de la isla de Oahu, la ciudad y al condado de Honolulu han formado una
+                            ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de
+                            superficie).
                         </p>
+                        <button type="button" class="btn btn-outline-light">Conocé más</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="center">
-            <br>
-            <a><small>CONOCE A LOS</small></a>
-            <h3><b>ORADORES</b></h3>
-            <div class="card-group w-75 m-auto">
-                <div class="card">
-                    <img src="steve.jpg" class="card-img-top img-fluid" alt="card-group-image">
-                    <div class="card-body">
-                        <button type="button" class="btn btn-warning"><b>JavaScript</b></button>
-                        <button type="button" class="btn btn-info"><b>React</b></button>
-                        <h5 class="card-title">Steve Jobs</h5>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, a error
-                            itaque reprehenderit impedit cumque! Hic, ex. Commodi in suscipit, laudantium reprehenderit
-                            soluta vel laboriosam repellendus maiores dolor doloribus minus.</p>
+        <div class="center" id="orador">
 
-                    </div>
+            <a><small>CONVIÉRTETE EN UN</small></a>
+            <h3><b>ORADOR</b></h3>
+            <a>Anótate como orador para dar una <u
+                    style="text-decoration: underline; text-decoration-style: dotted;">charla
+                    única.</u> Cuéntanos de qué quieres hablar!</a> <br> <br>
 
-                </div>
-                <div class="card">
-                    <img src="bill.jpg" class="card-img-top img-fluid" alt="card-group-image">
-                    <div class="card-body">
-                        <button type="button" class="btn btn-warning"><b>JavaScript</b></button>
-                        <button type="button" class="btn btn-info"><b>React</b></button>
-                        <h5 class="card-title">Bill Gates</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-                            consectetur illo unde enim cum quia harum ullam itaque quis laboriosam velit ducimus, culpa
-                            magnam nihil magni vel architecto laudantium voluptatibus.</p>
-
-                    </div>
-
-                </div>
-                <div class="card">
-                    <img src="ada.jpeg" class="card-img-top img-fluid" alt="card-group-image">
-                    <div class="card-body">
-                        <button type="button" class="btn btn-secondary"><b>Negocios</b></button>
-                        <button type="button" class="btn btn-danger"><b>Stertups</b></button>
-                        <h5 class="card-title">Ada Lovelace</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error
-                            quisquam doloremque dicta labore odit quos? Velit cumque excepturi ducimus assumenda,
-                            provident tempore officiis dolorem beatae fugiat totam possimus consequatur.</p>
-
-                    </div>
-                </div>
-            </div>
-            <br>
-
-            <div class="card mb-3" style="max-width: 2000px;">
-                <div class="row no-gutters">
+            <div class="container">
+                <div class="row">
                     <div class="col-md-6">
-                        <img src="honolulu.jpg" width="" class="card-img">
+                        <input type="email" class="form-control" id="nombre" placeholder="Nombre">
                     </div>
-                    <div class="col-md-6 back-honolulu">
-                        <div class="card-body">
-                            <h5 class="card-title text-white"><b>Bs As - Octubre</b></h5>
-                            <p class="card-text text-white">Buenos Aires es la provincia y localidad más grande del
-                                estado
-                                de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales
-                                ciudades estadounidenses. Aunque el nombrede Honolulu se refiere al área urbana en la
-                                costa
-                                sureste de la isla de Oahu, la ciudad y al condado de Honolulu han formado una
-                                ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de
-                                superficie).
-                            </p>
-                            <button type="button" class="btn btn-outline-light">Conocé más</button>
-                        </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" id="nombre" placeholder="Apellido">
+                    </div>
+                    <br> <br> <br>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Sobre qué quieres hablar?"></textarea>
+                    </div>
+                </div>
+                <a class="text-muted d-flex flex-nowrap">Recuerda incluír un título para tu charla.</a>
+                <div class="row">
+                    <div class="d-grid gap-2">
+                        <button style="background-color: #96C93E;" class="btn text-white">Enviar</button>
                     </div>
                 </div>
             </div>
-            <div class="center">
-
-                <a><small>CONVIÉRTETE EN UN</small></a>
-                <h3><b>ORADOR</b></h3>
-                <a>Anótate como orador para dar una <u
-                        style="text-decoration: underline; text-decoration-style: dotted;">charla
-                        única.</u> Cuéntanos de qué quieres hablar!</a> <br> <br>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" id="nombre" placeholder="Nombre">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" id="nombre" placeholder="Apellido">
-                        </div>
-                        <br> <br> <br>
-                        <div class="mb-3">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                placeholder="Sobre qué quieres hablar?"></textarea>
-                        </div>
-                    </div>
-                    <a class="text-muted d-flex flex-nowrap">Recuerda incluír un título para tu charla.</a>
-                    <div class="row">
-                        <div class="d-grid gap-2">
-                            <button style="background-color: #96C93E;" class="btn text-white">Enviar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
 
     </main>
     <footer class="text-center text-lg-start bg-light text-muted">

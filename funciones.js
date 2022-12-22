@@ -1,7 +1,7 @@
 const box1 = document.getElementById('Estudiante')
 const box2 = document.getElementById('Trainee')
 const box3 = document.getElementById('Junior')
-const cards = document.getElementsByClassName('card')
+const cards = document.getElementById('cards')
 const Name= document.getElementById('inputNombre')
 const firstName= document.getElementById('inputApellido')
 const email = document.getElementById('inputCorreo')
@@ -24,6 +24,39 @@ btnCalculate.addEventListener('click',calculate)
 btnDelete.addEventListener('click', Delete)
 
 
+
+function ticketsSubmit() {
+
+    let form = document.getElementById("form");
+    inputCheck(form);
+
+    function inputCheck(form) {
+        let arrayCheck = [];
+        for (i = 0; i < 3; i++) {
+            arrayCheck[i] = form[i].value;
+            if (form[i].value == "") {
+                document.getElementById("." + form[i].id).style.border = "2px solid red";
+            } else {
+                document.getElementById("." + form[i].id).style.border = "1px solid var(--gray-300)";
+            }
+        }
+
+
+        if (arrayCheck.every(element => element != "")) {
+            if (form[2].value.includes('@') && form[2].value.includes('.')) {
+                alert("Formulario enviado");
+                form.submit();
+                document.getElementById("." + form[2].id).style.border = "1px solid var(--gray-300)";
+            } else {
+                alert("Debe ingresar un correo válido");
+                document.getElementById("." + form[2].id).style.border = "2px solid red"
+            }
+        } else {
+            alert("Completar los campos en rojo");
+        }
+
+    }
+}
 
 function calculate(){
     if(CantOfTickets.value >= 1  ){
@@ -57,6 +90,7 @@ function handleClick(box) {
     category.value=(box.id==="Estudiante" && "1") ||
     (box.id ==="Trainee" && "2") ||
     (box.id ==="Junior" && "3")
+
     for (let item of cards) {
         if (item.id !== box.id) {       
             item.classList.replace("bg-light","bg-transparent")
