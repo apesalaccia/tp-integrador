@@ -11,7 +11,7 @@ nav.navbar {
   justify-content: flex-end;
 }
 .showcase {
-  background-image: url(../ba1.jpg);
+  background-image: url(ba1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
