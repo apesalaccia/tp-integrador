@@ -1,9 +1,9 @@
 const box1 = document.getElementById('Estudiante')
 const box2 = document.getElementById('Trainee')
 const box3 = document.getElementById('Junior')
-const cards = document.getElementById('cards')
-const Name= document.getElementById('inputNombre')
-const firstName= document.getElementById('inputApellido')
+const cards = document.getElementsByClassName('cards')
+const Name = document.getElementById('inputNombre')
+const firstName = document.getElementById('inputApellido')
 const email = document.getElementById('inputCorreo')
 const CantOfTickets = document.getElementById('cantidadEnt')
 const btnCalculate = document.getElementById('btnResumen')
@@ -20,9 +20,8 @@ const selectCate = {
 };
 
 
-btnCalculate.addEventListener('click',calculate)
+btnCalculate.addEventListener('click', calculate)
 btnDelete.addEventListener('click', Delete)
-
 
 
 function ticketsSubmit() {
@@ -58,59 +57,53 @@ function ticketsSubmit() {
     }
 }
 
-function calculate(){
-    if(CantOfTickets.value >= 1  ){
-let total = price * CantOfTickets.value
-desc = selectCate[category.value]
-total *= desc
-totalBuy.textContent = total
-CantOfTickets.style.border ="2px solid light grey"
-alert("compra realizada")
-}
-else {totalBuy.textContent ="" || alert("completa todos los campos")
+function calculate() {
+    if (CantOfTickets.value >= 1) {
+        let total = price * CantOfTickets.value
+        desc = selectCate[category.value]
+        total *= desc
+        totalBuy.textContent = total
+        CantOfTickets.style.border = "2px solid light grey"
+        alert("compra realizada")
+    } else {
+        totalBuy.textContent = "" || alert("completa todos los campos")
+
+    }
 
 }
 
-}
-
-function Delete(e){
+function Delete(e) {
     e.preventDefault()
-totalBuy.textContent = ''
-category.value = ""
-CantOfTickets.value = ''
-CantOfTickets.style.border ="1px solid light grey"
- Name.value = ""
-firstName.value = ""
-email.value = ""
+    totalBuy.textContent = ''
+    category.value = ""
+    CantOfTickets.value = ''
+    CantOfTickets.style.border = "1px solid light grey"
+    Name.value = ""
+    firstName.value = ""
+    email.value = ""
 }
 
 function handleClick(box) {
     box.ariaChecked = true
     box.classList.replace('bg-transparent','bg-light')
-    category.value=(box.id==="Estudiante" && "1") ||
-    (box.id ==="Trainee" && "2") ||
-    (box.id ==="Junior" && "3")
+    category.value = 
+    (box.id === "Estudiante" && "1") ||
+    (box.id === "Trainee" && "2") ||
+    (box.id === "Junior" && "3")
 
-    for (let item of cards) {
-        if (item.id !== box.id) {       
-            item.classList.replace("bg-light","bg-transparent")
-            item.ariaChecked = false
+    for (let item of cards){
+        if (item.id !== box.id) {
+        console.log(item.id)
         }
     }
-    }
-
-
-
-
-function assignEvents(box){
-    box.addEventListener("click", () => handleClick(box))
 }
-assignEvents(Estudiante)
-assignEvents(Trainee)
-assignEvents(Junior)
 
+    
 
+function asignarE(box){
+box.addEventListener('click', ()=> handleClick(box))
+}
 
-
-
-
+asignarE(box1)
+asignarE(box2)
+asignarE(box3)
